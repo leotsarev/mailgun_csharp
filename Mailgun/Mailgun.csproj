@@ -1,9 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2</TargetFramework>
+    <TargetFrameworks>netstandard2;net8</TargetFrameworks>
     <IsPackable>True</IsPackable>
-    <PackageVersion>0.8.0</PackageVersion>
+    <PackageVersion>0.9.0</PackageVersion>
     <PackageId>mailgun_csharp</PackageId>
     <Authors>Charles King; Leonid Tsarev</Authors>
     <PackageDescription>
@@ -11,9 +11,13 @@
     </PackageDescription>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>Mailgun API Mailer</PackageTags>
+	<DebugType>Embedded</DebugType>
+	<EmbedUntrackedSources>true</EmbedUntrackedSources>
     <RepositoryUrl>https://github.com/bringking/mailgun_csharp</RepositoryUrl>
     <PackageReleaseNotes>
-       - Add first implementation of events
+       - Multitarget .NET 8 &amp;nestandard to optimize builds
+	   - Add PDB &amp; Source
+	   - Bump Newtonsoft to combat vulnerability warnings
     </PackageReleaseNotes>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
     <DebugType>embedded</DebugType>
